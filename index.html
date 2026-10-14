@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cyrille Fillon — TCE, Rénovation &amp; Agencement</title>
+<meta name="description" content="Cadre du bâtiment, trente ans de terrain. Direction opérationnelle tous corps d'état, rénovation et agencement tertiaire. Loire, Rhône, Auvergne-Rhône-Alpes." />
+<meta property="og:title" content="Cyrille Fillon — TCE, Rénovation &amp; Agencement" />
+<meta property="og:description" content="Trente ans de chantier, quinze en responsabilité d'affaires. Tous corps d'état, rénovation, agencement tertiaire." />
+<meta property="og:type" content="profile" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --egee:#0A4D68; --stapler:#1B4D8C; --lin:#F8F5EE; --gris:#333; --gris-doux:#6b6b6b;
+  --trait:#e3ded2;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,"Helvetica Neue",Arial,sans-serif;color:var(--gris);background:var(--lin);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--egee)}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+
+/* En-tete */
+header{background:var(--egee);color:#fff;padding:56px 0 48px}
+.hdr{display:flex;gap:32px;align-items:center;flex-wrap:wrap}
+.hdr img{width:132px;height:132px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.25);flex-shrink:0}
+.hdr-txt{flex:1;min-width:240px}
+.nom{font-size:30px;font-weight:400;letter-spacing:6px;margin:0 0 6px}
+.baseline{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.72);margin:0 0 18px}
+.coord{font-size:15px;color:rgba(255,255,255,.92);margin:0}
+.coord a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4)}
+.lieu{font-size:13.5px;color:rgba(255,255,255,.62);margin:6px 0 0}
+.crochet{margin-top:22px}
+
+/* Accroche */
+.accroche{background:#fff;padding:40px 0;border-bottom:1px solid var(--trait)}
+.accroche p{font-size:18px;line-height:1.65;margin:0 0 16px;color:#2a2a2a}
+.accroche p:last-child{margin-bottom:0}
+.accroche strong{font-weight:600;color:var(--egee)}
+
+/* Sections */
+section{padding:44px 0;border-bottom:1px solid var(--trait)}
+h2{font-size:13px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--egee);border-bottom:1px solid var(--egee);padding-bottom:8px;margin:0 0 28px}
+
+/* Parcours */
+.poste{margin-bottom:30px;padding-left:20px;border-left:3px solid var(--stapler)}
+.poste:last-child{margin-bottom:0}
+.poste-h{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;margin-bottom:4px}
+.poste-t{font-size:17px;font-weight:600;color:#111;margin:0}
+.poste-d{font-size:13px;color:var(--gris-doux);white-space:nowrap}
+.poste-e{font-size:14.5px;color:var(--stapler);font-weight:500;margin:0 0 10px}
+.poste ul{margin:0;padding-left:18px}
+.poste li{margin-bottom:6px}
+.poste li::marker{color:var(--stapler)}
+
+/* References */
+.refs{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.ref{background:#fff;border:1px solid var(--trait);border-radius:6px;padding:16px 18px}
+.ref-t{font-weight:600;color:var(--egee);font-size:15px;margin:0 0 4px}
+.ref-d{font-size:13.5px;color:var(--gris-doux);margin:0;line-height:1.5}
+
+/* Cherche */
+.cherche{background:#fff}
+.cherche ul{margin:0;padding-left:18px;font-size:16px}
+.cherche li{margin-bottom:9px}
+.cherche li::marker{color:var(--stapler)}
+
+/* Discuter */
+.disc{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.disc-i{border-top:2px solid var(--stapler);padding-top:14px}
+.disc-i h3{font-size:15.5px;color:var(--egee);margin:0 0 7px;font-weight:600}
+.disc-i p{font-size:14.5px;margin:0;color:#444;line-height:1.55}
+
+/* CV */
+.cv-box{background:var(--egee);color:#fff;border-radius:8px;padding:28px 30px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.cv-box p{margin:0;font-size:16px}
+.cv-box .sub{font-size:13.5px;color:rgba(255,255,255,.7);margin-top:4px}
+.btn{background:#fff;color:var(--egee);text-decoration:none;font-weight:600;font-size:15px;padding:13px 26px;border-radius:5px;white-space:nowrap}
+
+/* Pied */
+footer{padding:34px 0 44px;font-size:14px;color:var(--gris-doux)}
+footer a{color:var(--egee)}
+.fcoord{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:12px}
+
+@media(max-width:620px){
+  .nom{font-size:23px;letter-spacing:4px}
+  header{padding:40px 0 34px}
+  .hdr img{width:96px;height:96px}
+  .accroche p{font-size:16.5px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hdr">
+    <img src="photo.jpg" alt="Cyrille Fillon" />
+    <div class="hdr-txt">
+      <h1 class="nom">CYRILLE FILLON</h1>
+      <p class="baseline">TCE &middot; Rénovation &amp; Agencement</p>
+      <p class="coord">07 63 85 71 33 &middot; <a href="mailto:cfillon@me.com">cfillon@me.com</a></p>
+      <p class="lieu">Saint-Étienne &middot; mobilité Loire, Haute-Loire, Rhône, Auvergne-Rhône-Alpes</p>
+    </div>
+    <svg class="crochet" xmlns="http://www.w3.org/2000/svg" viewBox="28 15 44 70" width="40" height="64" aria-hidden="true">
+      <path d="M40 25 L60 25 L60 75 L40 75" stroke="#F8F5EE" stroke-width="8" fill="none" stroke-linecap="square" stroke-linejoin="miter" opacity=".55"/>
+    </svg>
+  </div>
+</header>
+
+<div class="accroche">
+  <div class="wrap">
+    <p><strong>Trente ans de bâtiment, dont quinze en responsabilité d'affaires.</strong> J'ai monté des activités, des équipes et des portefeuilles clients, et j'ai conduit des chantiers de la première visite jusqu'à la levée des réserves.</p>
+    <p>Mon terrain, c'est la rénovation et le second œuvre tertiaire : des plateaux de bureaux, des sièges sociaux, des établissements recevant du public, le plus souvent en site occupé, où le client juge la date de livraison et ce qu'il voit en arrivant le matin.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>Parcours</h2>
+
+    <div class="poste">
+      <div class="poste-h"><p class="poste-t">Directeur opérationnel TCE</p><span class="poste-d">2022 – 2026</span></div>
+      <p class="poste-e">Groupe Gap, Lyon</p>
+      <ul>
+        <li>Création intégrale de l'activité tous corps d'état : structuration commerciale, recrutement des équipes de second œuvre, mise en place des processus opérationnels et financiers.</li>
+        <li>Développement du portefeuille grands comptes : Crédit Agricole, Groupama, Solar, Interimob, principales régies de l'agglomération lyonnaise.</li>
+        <li>Interlocuteur direct des architectes et bureaux d'études structure, pilotage complet des chantiers de rénovation d'envergure.</li>
+        <li>Création d'un pôle expertise mise aux normes ERP et accessibilité PMR, avec architectes spécialisés et ergothérapeutes.</li>
+      </ul>
+    </div>
+
+    <div class="poste">
+      <div class="poste-h"><p class="poste-t">Chargé d'affaires grands comptes</p><span class="poste-d">2019 – 2022</span></div>
+      <p class="poste-e">Espace Agencement — agencement Solid Surface</p>
+      <ul>
+        <li>Opérations tertiaires haut de gamme menées en direct avec les directions immobilières, de l'étude à la réception.</li>
+        <li>Tour Saint-Gobain à La Défense, sièges Dior à Neuilly, AG2R à Boulogne, AliExpress à Paris, Crédit Agricole à Toulouse.</li>
+      </ul>
+    </div>
+
+    <div class="poste">
+      <div class="poste-h"><p class="poste-t">Chargé d'affaires</p><span class="poste-d">2017 – 2019</span></div>
+      <p class="poste-e">A.C.T.M</p>
+      <ul>
+        <li>Construction neuve : complexe cinématographique de Saint-Chamond, environ 2 000 m² en charpente métallique, coordination du bureau d'études structure et du lot serrurerie.</li>
+        <li>Rénovation et mise aux normes ERP : maison de santé, maison de retraite, mairie, salle municipale, salle de sport.</li>
+        <li>Pilotage multi-sites sur Saint-Étienne, Firminy, Aurec-sur-Loire, Sorbiers, La Talaudière.</li>
+      </ul>
+    </div>
+
+    <div class="poste">
+      <div class="poste-h"><p class="poste-t">Fondateur et gérant</p><span class="poste-d">2015 – 2017</span></div>
+      <p class="poste-e">Actes Décoratifs — maîtrise d'œuvre en rénovation intérieure</p>
+      <ul>
+        <li>Création d'entreprise, développement du portefeuille clients particuliers et boutiques, conception, plans, réalisation de chantiers complets.</li>
+      </ul>
+    </div>
+
+    <div class="poste">
+      <div class="poste-h"><p class="poste-t">Conducteur de travaux</p><span class="poste-d">2005 – 2015</span></div>
+      <p class="poste-e">TLM — construction de maisons individuelles</p>
+      <ul>
+        <li>Soixante maisons en ossature acier lourde sur la Loire et la Haute-Loire, maisons traditionnelles, bardage bois, maisons groupées, labels HPE et BBC.</li>
+        <li>Interlocuteur unique du client de la signature à la réception, gestion de tous les corps d'état, suivi économique et budgétaire.</li>
+        <li>Rénovation d'immeubles, aménagement de lotissements de plus de quarante lots, relations concessionnaires.</li>
+      </ul>
+    </div>
+
+    <div class="poste">
+      <div class="poste-h"><p class="poste-t">Co-fondateur et co-gérant</p><span class="poste-d">1995 – 2005</span></div>
+      <p class="poste-e">V &amp; F — distribution B2B</p>
+      <ul>
+        <li>Création d'entreprise et développement d'un portefeuille d'entreprises clientes sur dix ans.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Quelques références</h2>
+    <div class="refs">
+      <div class="ref"><p class="ref-t">Tour Saint-Gobain</p><p class="ref-d">Paris La Défense — agencement tertiaire haut de gamme.</p></div>
+      <div class="ref"><p class="ref-t">Siège Dior</p><p class="ref-d">Neuilly-sur-Seine — opération menée en direct avec la direction immobilière.</p></div>
+      <div class="ref"><p class="ref-t">Sièges AG2R et AliExpress</p><p class="ref-d">Boulogne et Paris — plateaux tertiaires, site occupé.</p></div>
+      <div class="ref"><p class="ref-t">Crédit Agricole et Groupama</p><p class="ref-d">Rénovation lourde, comptes développés et suivis sur plusieurs années.</p></div>
+      <div class="ref"><p class="ref-t">Complexe cinématographique</p><p class="ref-d">Saint-Chamond — 2 000 m², charpente métallique, construction neuve.</p></div>
+      <div class="ref"><p class="ref-t">Soixante maisons individuelles</p><p class="ref-d">Loire et Haute-Loire — ossature acier, labels HPE et BBC.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cherche">
+  <div class="wrap">
+    <h2>Ce que je cherche</h2>
+    <ul>
+      <li>Un poste de <strong>chargé d'affaires, responsable travaux ou direction opérationnelle</strong>, en CDI.</li>
+      <li>En <strong>rénovation, agencement ou second œuvre tertiaire</strong>, chez un contractant général, un agenceur, une entreprise générale ou côté maître d'ouvrage.</li>
+      <li>Sur <strong>la Loire et le Rhône</strong>, Saint-Étienne et l'agglomération lyonnaise.</li>
+      <li>Disponible <strong>immédiatement</strong>.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Ce dont on peut parler</h2>
+    <div class="disc">
+      <div class="disc-i">
+        <h3>Construire un prix qui tient</h3>
+        <p>Trente ans à chiffrer et à négocier, des deux côtés de la table. Je sais ce qu'un lot coûte vraiment quand il se passe mal, et c'est là que se joue la marge.</p>
+      </div>
+      <div class="disc-i">
+        <h3>Monter une activité de zéro</h3>
+        <p>Chez Groupe Gap, le réseau de sous-traitants, les équipes, les process et le portefeuille ont été construits en partant de rien.</p>
+      </div>
+      <div class="disc-i">
+        <h3>Le site occupé</h3>
+        <p>Un chantier dans un bâtiment qui vit se phase, s'annonce et se nettoie tous les soirs. L'entreprise qui ne le comprend pas ne revient pas.</p>
+      </div>
+      <div class="disc-i">
+        <h3>ERP et accessibilité PMR</h3>
+        <p>Mise aux normes d'établissements recevant du public, en lien avec des architectes spécialisés et des ergothérapeutes.</p>
+      </div>
+      <div class="disc-i">
+        <h3>Tenir une équipe</h3>
+        <p>Arbitrer quand deux affaires se chevauchent, reprendre un conducteur sans le casser devant son client, et lui laisser la main quand il a raison.</p>
+      </div>
+      <div class="disc-i">
+        <h3>Les outils du chantier</h3>
+        <p>SketchUp Pro, Batigest, Isis Bâtiment, Excel à un niveau avancé. Et un projet d'application de suivi des dossiers d'ouvrages exécutés, mené en parallèle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cv-box">
+      <div>
+        <p>Le CV complet, en PDF</p>
+        <p class="sub">Parcours détaillé, compétences et formation.</p>
+      </div>
+      <a class="btn" href="cv-cyrille-fillon.pdf" download>Télécharger le CV</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fcoord">
+      <span>07 63 85 71 33</span>
+      <a href="mailto:cfillon@me.com">cfillon@me.com</a>
+      <span>Saint-Étienne (42)</span>
+    </div>
+    <div>Cyrille Fillon — TCE, Rénovation &amp; Agencement</div>
+  </div>
+</footer>
+
+</body>
+</html>
